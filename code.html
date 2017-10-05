@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<body>
+<style>
+body 
+{background-color: #B2B2B2;
+}
+</style>
+<form action="/action_page.php">
+  First name:<br>
+  <input type="text" name="firstname" value="">
+  <br>
+  Last name:<br>
+  <input type="text" name="lastname" value="">
+  <br>
+  Age:<br>
+  <input type="text" value="">
+  <br><br>
+  Gender:<br>
+<input type="radio" name="gender" value="male" checked> Male<br>
+  <input type="radio" name="gender" value="female"> Female<br>
+  <input type="radio" name="gender" value="other"> Other  
+<br><br>
+  <tr><TD>&nbsp;<B>Blood Group</B>* </TD>
+    <TD style="DISPLAY: inline">
+
+
+<select name="ctl00$ContentPlaceHolder1$txtBloodGroup" id="ctl00_ContentPlaceHolder1_txtBloodGroup">
+	<option selected="selected" value="Select One">Select One</option>
+	<option value="A+">A+</option>
+	<option value="A-">A-</option>
+	<option value="AB+">AB+</option>
+	<option value="AB-">AB-</option>
+	<option value="B+">B+</option>
+	<option value="B-">B-</option>
+	<option value="O+">O+</option>
+	<option value="O-">O-</option>
+	<option value="A1+">A1+</option>
+	<option value="A1-">A1-</option>
+	<option value="A2+">A2+</option>
+	<option value="A2-">A2-</option>
+	<option value="A1B+">A1B+</option>
+	<option value="A1B-">A1B-</option>
+	<option value="A2B+">A2B+</option>
+	<option value="A2B-">A2B-</option>
+	<option value="Bombay Blood Group">Bombay Blood Group</option>
+</select>
+
+
+</TD></TR>
+
+  <br><br>
+<TR>
+    <TD >&nbsp;<B>Place</B> *</TD>
+    <TD style="DISPLAY: inline" >
+
+        <select name="ctl00$ContentPlaceHolder1$ddlPlace" id="ctl00_ContentPlaceHolder1_ddlPlace" OnChange="MakeotherVisibel();" style="width:200px;">
+	<option selected="selected" value="Select One">Select One</option>
+	<option value="HYDERABAD">HYDERABAD</option>
+	<option value="SECUNDERABAD">SECUNDERABAD</option>
+	<option value="OTHERS">OTHERS</option>
+	<option value="Dist: ADILABAD">Dist: ADILABAD</option>
+	<option value="Dist: ANANTAPUR">Dist: ANANTAPUR</option>
+	<option value="Dist: CHITTOOR">Dist: CHITTOOR</option>
+	<option value="Dist: KADAPA">Dist: KADAPA</option>
+	<option value="Dist: EAST GODAVARI">Dist: EAST GODAVARI</option>
+	<option value="Dist: GUNTUR">Dist: GUNTUR</option>
+	<option value="Dist: HYDERABAD">Dist: HYDERABAD</option>
+	<option value="Dist: KARIMNAGAR">Dist: KARIMNAGAR</option>
+	<option value="Dist: KHAMMAM">Dist: KHAMMAM</option>
+	<option value="Dist: KRISHNA">Dist: KRISHNA</option>
+	<option value="Dist: KURNOOL">Dist: KURNOOL</option>
+	<option value="Dist: MAHBUBNAGAR">Dist: MAHBUBNAGAR</option>
+	<option value="Dist: MEDAK">Dist: MEDAK</option>
+	<option value="Dist: NALGONDA">Dist: NALGONDA</option>
+	<option value="Dist: NELLORE">Dist: NELLORE</option>
+	<option value="Dist: NIZAMABAD">Dist: NIZAMABAD</option>
+	<option value="Dist: PRAKASAM">Dist: PRAKASAM</option>
+	<option value="Dist: RANGAREDDI">Dist: RANGAREDDI</option>
+	<option value="Dist: SRIKAKULAM">Dist: SRIKAKULAM</option>
+	<option value="Dist: VISAKHAPATNAM">Dist: VISAKHAPATNAM</option>
+	<option value="Dist: VIZIANAGARAM">Dist: VIZIANAGARAM</option>
+	<option value="Dist: WARANGAL">Dist: WARANGAL</option>
+	<option value="Dist: WEST GODAVARI">Dist: WEST GODAVARI</option>
+
+</select>
+        &nbsp; &nbsp; 
+        <input name="ctl00$ContentPlaceHolder1$txtOplace" type="text" maxlength="50" id="ctl00_ContentPlaceHolder1_txtOplace" size="20" name="Oplace" />
+
+
+
+<br><br>
+<TR>   
+ <TD><B>E-Mail(If Any)</B> </TD>
+    <TD><input name="ctl00$ContentPlaceHolder1$txtEmail" type="text" id="ctl00_ContentPlaceHolder1_txtEmail" maxlength="50" size="30" /> 
+        <span id="ctl00_ContentPlaceHolder1_revMailid" style="color:Red;visibility:hidden;">Please enter a valid EmailID</span></TD></TR>
+<br><br>
+  <TR>
+    <TD><B>Address(Off/Res)</B>*</TD>
+    <TD><input name="ctl00$ContentPlaceHolder1$txtAddress" type="text" id="ctl00_ContentPlaceHolder1_txtAddress" maxlength="50" size="30" /> </TD></TR>
+<br><br>
+  <TR>
+    <TD><B>Mobile No</B>*</TD>
+    <TD><input name="ctl00$ContentPlaceHolder1$txtMobileNo" type="text" id="ctl00_ContentPlaceHolder1_txtMobileNo" maxlength="50" size="30" /> 
+         <span id="ctl00_ContentPlaceHolder1_revMobileNo" style="color:Red;visibility:hidden;">Please enter a valid Mobile Number</span></TD></TR>
+<br><br>
+
+       <TR>
+    <TD><B>Phone(Res/Off)</B></TD>
+    <TD><input name="ctl00$ContentPlaceHolder1$txtPhone" type="text" id="ctl00_ContentPlaceHolder1_txtPhone" maxlength="50" size="30" /> </TD></TR>
+ <TR>
+<br><br>
+<TR>
+    <TD><B>Previous Date of Blood Donation</B> </TD>
+    <TD><input name="ctl00$ContentPlaceHolder1$txtLastDateofBloodDonation" type="text" id="ctl00_ContentPlaceHolder1_txtLastDateofBloodDonation" maxlength="50" size="30" />&nbsp;&nbsp;(Format: dd/mm/yyyy) </TD></TR> 
+  
+  
+  
+  <TR>
+    <TD align=center colSpan=2></TD> <br /></TR> 
+  <TR>
+    <TD align="left" colSpan=2><FONT face="verdana, arial" color="red" ><b>Note : </b>Blood Donors Details will NOT appear in ‘Search for Donors’ Page for 30 	days form ‘Previous Date of Blood Donation’</FONT> </TD> </TR> 
+<br>
+<br>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<input type="submit" value="Submit">
+<br>
+<br>
+</form> 
+
+<p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p>
+
+</body>
+</html>
